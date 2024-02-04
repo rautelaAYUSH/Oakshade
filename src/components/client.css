@@ -1,0 +1,168 @@
+.client-client {
+  width: 48%;
+  height: auto;
+  display: grid;
+  padding: 2rem 0.5rem;
+  position: relative;
+  border-color: #ffffff;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  border-bottom-width: 1px;
+}
+.client-text {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Verdana";
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+.client-author {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.client-details {
+  gap: 13px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.client-text1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 500;
+  line-height: 30px;
+  white-space: nowrap;
+}
+.client-text2 {
+  color: var(--dl-color-gray-500);
+  width: auto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  margin-left: 0rem;
+  white-space: nowrap;
+}
+.client-root-class-name {
+  width: auto;
+  height: auto;
+  margin-bottom: 0rem;
+}
+.client-root-class-name1 {
+  width: auto;
+  margin-bottom: 0rem;
+}
+.client-root-class-name2 {
+  width: auto;
+  margin-bottom: 0rem;
+}
+.client-root-class-name3 {
+  width: auto;
+  margin-bottom: 0rem;
+}
+@media(max-width: 1600px) {
+  .client-text2 {
+    text-align: left;
+  }
+  .client-root-class-name {
+    width: auto;
+  }
+  .client-root-class-name1 {
+    width: auto;
+  }
+  .client-root-class-name2 {
+    width: auto;
+  }
+  .client-root-class-name3 {
+    width: auto;
+  }
+}
+@media(max-width: 1200px) {
+  .client-text {
+    text-align: left;
+  }
+  .client-details {
+    gap: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .client-text1 {
+    font-size: 22px;
+    text-align: left;
+  }
+  .client-text2 {
+    font-size: 22px;
+  }
+  .client-root-class-name {
+    width: auto;
+  }
+}
+@media(max-width: 991px) {
+  .client-client {
+    gap: var(--dl-space-space-unit);
+    width: auto;
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .client-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .client-author {
+    gap: var(--dl-space-space-unit);
+  }
+  .client-text1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .client-text2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .client-root-class-name {
+    width: auto;
+  }
+}
+@media(max-width: 737px) {
+  .client-text {
+    text-align: left;
+  }
+  .client-root-class-name {
+    width: auto;
+  }
+  .client-root-class-name1 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    bottom: 0px;
+    position: static;
+  }
+}
+@media(max-width: 479px) {
+  .client-text {
+    text-align: center;
+  }
+  .client-details {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .client-text2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .client-root-class-name1 {
+    align-self: center;
+  }
+  .client-root-class-name2 {
+    width: 100%;
+    align-self: center;
+  }
+  .client-root-class-name3 {
+    align-self: center;
+  }
+}
