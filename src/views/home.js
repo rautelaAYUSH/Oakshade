@@ -467,6 +467,11 @@ const Home = props => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+
 
   return (
     <div className='home-container'>
@@ -548,13 +553,17 @@ const Home = props => {
               </div>
               <div className='home-items1'>
                 <div className='home-links1'>
-                  <span className='nav-link'>Work</span>
-                  <span className='nav-link'>Services</span>
-                  <span className='nav-link'>About</span>
-                  <span className='nav-link'>Contact</span>
+                  {/* <span className='nav-link' href='#work' >Work</span>
+                  <span className='nav-link' href='#services' >Services</span>
+                  <span className='nav-link' href='#about' >About</span>
+                  <span className='nav-link' href='#footer' >Contact</span> */}
+                  <a className="nav-link" onClick={closeMenu} href="#work">Work</a>
+                  <a className="nav-link" onClick={closeMenu} href="#services">Services</a>
+                  <a className="nav-link" onClick={closeMenu} href="#about">About</a>
+                  <a className="nav-link" onClick={closeMenu} href="#footer">Contact</a>
                 </div>
                 <button className='start-button button home-button1'>
-                  <span className='home-text06'>Start a project</span>
+                  <span className='home-text06'>Book a call</span>
                 </button>
               </div>
             </div>
