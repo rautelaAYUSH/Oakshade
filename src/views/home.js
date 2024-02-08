@@ -562,9 +562,17 @@ const Home = props => {
                   <a className="nav-link" onClick={closeMenu} href="#about">About</a>
                   <a className="nav-link" onClick={closeMenu} href="#footer">Contact</a>
                 </div>
-                <button className='start-button button home-button1'>
+                {/* <button className='start-button button home-button1'>
                   <span className='home-text06'>Book a call</span>
-                </button>
+                </button> */}
+                <a
+                  href='https://calendly.com/oakshade-ai'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  className='home-link04 start-button button'
+                >
+                  <span className='home-text'>Book a Call</span>
+                </a>
               </div>
             </div>
           </div>
