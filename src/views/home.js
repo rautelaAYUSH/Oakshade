@@ -778,7 +778,7 @@ const Home = props => {
         </div>
         <div className='home-clients'>
           <div className='home-header4'>
-            <h2 className='home-title3 heading'>Our Clients</h2>
+            <h2 className='home-title3 heading'>Testimonials</h2>
           </div>
           <div className='home-grid1'>
             <div className='home-column'>
