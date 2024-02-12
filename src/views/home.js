@@ -476,8 +476,8 @@ const Home = props => {
   return (
     <div className='home-container'>
       <Helmet>
-        <title>Agency modern template</title>
-        <meta property='og:title' content='Agency modern template' />
+        <title>Oakshade AI</title>
+        {/* <meta property='og:title' content='Agency modern template' /> */}
       </Helmet>
       <div className='home-navbar'>
         <header data-thq='thq-navbar' className='home-navbar-interactive'>
