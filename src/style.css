@@ -116,7 +116,7 @@
 }
 .heading {
   color: white;
-  positon: relative;
+  /* positon: relative; */
   z-index: 1;
   font-size: 80px;
   font-style: normal;
