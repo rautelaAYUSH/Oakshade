@@ -1,8 +1,10 @@
 .scroll-to-top-button {
   display: block;
   position: fixed;
-  bottom: 7rem;
-  right: 2rem;
+  bottom: 3rem;
+  /* right: 2rem; */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   padding: 0.6rem 0.6rem;
   background-color: transparent;
