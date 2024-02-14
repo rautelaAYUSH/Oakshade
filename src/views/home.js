@@ -448,7 +448,7 @@
 // }
 
 // export default Home
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Helmet } from 'react-helmet';
 
@@ -463,6 +463,7 @@ import './home.css';
 
 const Home = props => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -471,7 +472,30 @@ const Home = props => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    // Add event listener to check scroll position
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      // Cleanup event listener when component unmounts
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
+  const handleScroll = () => {
+    // Show scroll-to-top button when user scrolls down
+    if (window.scrollY > 200) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <div className='home-container'>
@@ -927,6 +951,11 @@ const Home = props => {
         </div>
         <img alt='image' src='/logo-900w.png' className='home-image12' />
       </footer>
+      {showScrollButton && (
+        <button className='scroll-to-top-button' onClick={scrollToTop}>
+          &#8679; Top
+        </button>
+      )}
     </div>
   );
 };
