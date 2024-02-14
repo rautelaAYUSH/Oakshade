@@ -953,7 +953,7 @@ const Home = props => {
       </footer>
       {showScrollButton && (
         <button className='scroll-to-top-button' onClick={scrollToTop}>
-          &#8679; Top
+          &#8679; 
         </button>
       )}
     </div>
