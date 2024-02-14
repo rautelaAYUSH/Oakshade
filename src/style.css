@@ -193,7 +193,7 @@
 }
 .footer-img:hover {
   cursor: pointer;
-  transform: none|transform-functions| initial|inherit;
+  transform: none;
 }
 .about-img {
   width: 100%;
